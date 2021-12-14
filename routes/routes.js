@@ -9,7 +9,6 @@ module.exports = app => {
     
     readFileAsync("db/db.json","utf8").then(function(data) {
         var notes = JSON.parse(data);
-        var uniqueId = notes.length;
 
         
         app.get("/api/notes", function(req, res) {
@@ -19,7 +18,7 @@ module.exports = app => {
         
         app.post("/api/notes", function(req, res) {
             let newNote = req.body;
-            notes[uniqueId++] = newNote;
+            notes.push(newNote);
 
             updateDb();
 
@@ -34,7 +33,7 @@ module.exports = app => {
 
         
         app.delete("/api/notes/:id", function(req, res) {
-            delete notes[req.params.id];
+            notes.splice(req.params.id, 1);
             updateDb();
             console.log("Deleted note with id "+req.params.id);
         });
