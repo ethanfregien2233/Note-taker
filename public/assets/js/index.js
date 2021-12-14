@@ -11,6 +11,8 @@ fs.readFile("./db/db.json","json",function(data) {
     var notes = data;
 });
 
+var uniqueId = 0;
+
 require('./routes/htmlRoutes')(app);
 require('./routes/apiRoutes')(app);
 
