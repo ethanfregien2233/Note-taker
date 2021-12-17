@@ -10,13 +10,13 @@ This simple note taking application allows you to save notes with a title and pl
 
 Clone the repository to your local development environment.
 
-Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open `http://localhost:3000` in your browser. The Note Taker app is [live on Heroku]() for you to use as well.
+Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open `http://localhost:3000` in your browser. The Note Taker app is [live on Heroku](https://shrouded-mountain-73131.herokuapp.com/ ) for you to use as well.
 
 ## Preview:
 
-
+https://watch.screencastify.com/v/mdAuDGjm2JK8Xbl0nFg7
 ## Deployed Link:
-
+https://shrouded-mountain-73131.herokuapp.com/ 
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
